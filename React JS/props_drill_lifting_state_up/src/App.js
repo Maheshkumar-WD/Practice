@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+
 import './App.css';
 import FormWrapper from './components/wrappers/FormWrapper';
 import TodoWrapper from './components/wrappers/TodoWrapper';
@@ -8,6 +9,7 @@ function App() {
   let [todos,setTodos] = useState([]);
 
   let onSubmit=(todo)=>{
+    console.log("inside submit function")
     setTodos(todosState=>{
       return [...todosState,todo];
     })
@@ -15,7 +17,7 @@ function App() {
 
   return (
     <div className="App">
-       <FormWrapper onSubmit={onSubmit} />
+       <FormWrapper currLength={todos.length} onSubmit={onSubmit} />
        <TodoWrapper todos={todos} />
        
     </div>

@@ -12,9 +12,8 @@ const TodoItem = ({todo}) => {
   return (
     <div className={`${classes.todo} ${priorityClass}`}>
         <div className=''>
-
-        <h2>{todo.title}</h2>
-        <span>{todo.date}</span>
+            <h2>{todo.title}</h2>
+            <p>{todo.date}</p>
         </div>
         <div className="actions"><button>Edit</button><button>Delete</button></div>
     </div>

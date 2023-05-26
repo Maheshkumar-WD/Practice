@@ -1,12 +1,15 @@
 import React, {useState} from 'react'
+import {v4 as uniqueId} from "uuid";
 import classes from "./NewTodo.module.css"
 let initialState = {title:"",date:"",priority:""}
 const NewTodo = ({onSubmit,onClose}) => {
-    
     let [formData,setFormData] = useState(initialState)
    let handleSubmit = (e)=>{
-        e.preventDefault();
-        onSubmit(formData);
+       e.preventDefault();
+       formData.id = uniqueId()
+       
+       onSubmit(formData);
+    //    console.log("after form submit")
         setFormData(initialState);
         onClose()
     }
@@ -34,7 +37,6 @@ const NewTodo = ({onSubmit,onClose}) => {
             <div className={classes.form_actions}>
             <button type="submit" className={`${classes.btn} ${classes.success}`}>Add Todo</button>
             <button type="button" className={`${classes.btn} ${classes.cancle}`} onClick={onClose}>Cancle</button>
-
             </div>
         </form>
     </>

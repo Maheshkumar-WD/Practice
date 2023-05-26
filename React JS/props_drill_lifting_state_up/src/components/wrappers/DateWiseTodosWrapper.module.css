@@ -1,0 +1,13 @@
+.dateTitledComponent{
+    
+}
+.titledDate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:crimson;
+    border-bottom: 2px solid crimson;
+}
+.titledDate >span {
+    font-size: 28px;
+}
