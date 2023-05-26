@@ -1,5 +1,4 @@
 import React from "react";
-import TodoItem from "./TodoItem";
 import classes from "./TodoList.module.css";
 import DateWiseTodosWrapper from "../wrappers/DateWiseTodosWrapper";
 const TodosList = ({ todos }) => {
