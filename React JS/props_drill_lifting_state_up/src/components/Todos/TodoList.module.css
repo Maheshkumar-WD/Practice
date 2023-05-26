@@ -1,0 +1,9 @@
+.todos{
+    margin: 8px 0px 8px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    height: auto;
+    max-height: 500px;
+    overflow-y: auto;
+}

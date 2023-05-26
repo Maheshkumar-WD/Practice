@@ -22,6 +22,7 @@ const NewTodo = ({onSubmit,onClose}) => {
   return (
     <>
         <form onSubmit={handleSubmit} >
+            <h2>Add New Todo</h2>
             <input placeholder='New Todo' onChange={handleChange} type="text" name="title" id="title" value={formData.title} required />
             <input onChange={handleChange} type="date" name="date" id="date" value={formData.date} required />
             <select onChange={handleChange} name='priority' id='priority' value={formData.priority} required>

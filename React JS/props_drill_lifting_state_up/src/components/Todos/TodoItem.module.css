@@ -1,0 +1,41 @@
+.todo{
+    display: flex;
+    justify-content: space-between;
+    gap: 5px;
+    padding: 0 4px;
+    border-radius: 8px 0px 0px 8px;
+    border: 1px solid gray;
+    padding-left: 12px;
+    position:relative;
+}
+
+.todo.priority_low::before{
+    border-radius: 8px 0px 0px 8px;
+
+    content:"";
+    position: absolute;
+    left: 0;top: 0;
+    height: 100%;
+    width: 8px;
+    background-color: green;
+}
+.todo.priority_medium::before {
+    border-radius: 8px 0px 0px 8px;
+
+    content:"";
+    position: absolute;
+    left: 0;top: 0;
+    height: 100%;
+    width: 8px;
+    background-color: orange;
+}
+.todo.priority_high::before{
+    border-radius: 8px 0px 0px 8px;
+
+    content:"";
+    position: absolute;
+    left: 0;top: 0;
+    height: 100%;
+    width: 8px;
+    background-color: red;
+}

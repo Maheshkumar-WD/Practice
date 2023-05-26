@@ -3,6 +3,7 @@
     flex-direction: column;
     gap: 5px;
     align-items: center;
+    margin-top: 24px;
 }
 .form_btn{
     padding:  6px;
