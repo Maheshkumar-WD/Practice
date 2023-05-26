@@ -1,0 +1,18 @@
+.formWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+}
+.form_btn{
+    padding:  6px;
+    border: 0;
+    border-radius: 4px;
+}
+.cancle{
+    background-color: crimson;
+    color: white;
+}
+.add{
+    background-color: rgb(17, 66, 244);
+}

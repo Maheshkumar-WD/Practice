@@ -1,0 +1,36 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    padding: 12px 24px;
+    width: 250px;
+    background-color: #eee;
+    border-radius: 5px;
+    margin: auto;
+}.form_actions{
+    margin-top: 8px;
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+    
+}
+input,select{
+    background-color: rgba(220, 20, 60, 0.205);
+    width: 100%;
+    padding: 4px;
+    border: 0;
+    border-radius: 2px;
+}
+.btn{
+    padding:6px 8px ;
+    border: 0;
+    border-radius: 3px;
+    font-weight: 600;
+}
+.success{
+    background-color: rgba(0, 128, 0, 0.807);
+}
+.cancle{
+    background-color: rgba(255, 0, 0, 0.77);
+}
