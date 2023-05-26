@@ -3,3 +3,5 @@
   - Dates 
   - Props drilling
   - Lifting state up
+
+### Note: Data won't be saved i.e. when you refresh the page the data will be removed 
