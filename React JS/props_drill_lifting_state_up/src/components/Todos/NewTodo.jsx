@@ -35,7 +35,7 @@ const NewTodo = ({onSubmit,onClose}) => {
             </select>
             <div className={classes.form_actions}>
             <button type="submit" className={`${classes.btn} ${classes.success}`}>Add Todo</button>
-            <button type="button" className={`${classes.btn} ${classes.cancle}`} onClick={onClose}>Cancle</button>
+            <button type="button" className={`${classes.btn} ${classes.cancle}`} onClick={onClose}>Cancel</button>
             </div>
         </form>
     </>
