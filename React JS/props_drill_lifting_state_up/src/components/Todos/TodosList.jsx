@@ -5,7 +5,6 @@ const TodosList = ({ todos }) => {
   todos = todos.sort(
     (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
   );
-  console.log(todos);
   let datesWiseTodos = {};
   for (let i = 0; i < todos.length; i++) {
     if (datesWiseTodos[todos[i].date]) {

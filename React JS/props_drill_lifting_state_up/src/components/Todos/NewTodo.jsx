@@ -9,7 +9,6 @@ const NewTodo = ({onSubmit,onClose}) => {
        formData.id = uniqueId()
        
        onSubmit(formData);
-    //    console.log("after form submit")
         setFormData(initialState);
         onClose()
     }

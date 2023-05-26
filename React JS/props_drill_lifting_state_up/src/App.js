@@ -9,7 +9,6 @@ function App() {
   let [todos,setTodos] = useState([]);
 
   let onSubmit=(todo)=>{
-    console.log("inside submit function")
     setTodos(todosState=>{
       return [...todosState,todo];
     })
