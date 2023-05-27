@@ -14,3 +14,6 @@
 ## Note 
 1. This Cart Page is done to understand how useEffect works and how cart functionality works
 2. Data is not stored in db (Database) or in localstorage. It is just stored in useState, if you refresh the page data will be removed.
+
+
+## live Link: https://cart-data-fetch-products-react-portals.vercel.app/
