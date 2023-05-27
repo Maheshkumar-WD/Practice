@@ -28,7 +28,7 @@ const Product = ({product,onAddToCart}) => {
   <Divider />
   <CardFooter>
     <ButtonGroup spacing='2'>
-      <Button onClick={()=>onAddToCart(product)} variant='solid' colorScheme='blue'>
+      <Button onClick={()=>onAddToCart(product)} variant='solid' colorScheme='teal'>
         <MdAddShoppingCart fontSize={"30px"} />
       </Button>
     </ButtonGroup>
