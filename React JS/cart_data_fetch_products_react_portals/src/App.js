@@ -41,7 +41,7 @@ function App() {
     if(findItem>-1){
       newCartData[findItem].quantity++;
       let updated = {data:newCartData,amount:cart.amount+1}
-      console.log(updated)
+      
       setCart(updated);
     }else{
       let newProduct = product;

@@ -1,4 +1,4 @@
-import {   Flex, useDisclosure } from '@chakra-ui/react'
+import {   Flex } from '@chakra-ui/react'
 import React from 'react'
 import {MdShoppingCart} from "react-icons/md"
 import classes from "./Navbar.module.css"

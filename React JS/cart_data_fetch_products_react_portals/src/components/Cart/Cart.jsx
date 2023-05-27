@@ -2,7 +2,6 @@ import {
   Button,
   Card,
   CardBody,
-  CardFooter,
   Divider,
   Heading,
   Image,
@@ -19,7 +18,6 @@ const Cart = ({ cartData,onHandleCartQuantity }) => {
     },0)
     setTotal(totalCart);
   },[cartData,onHandleCartQuantity])
-  console.log(total);
 
   let renderList = cartData.length>0?<>
   {cartData.map((prod) => {
