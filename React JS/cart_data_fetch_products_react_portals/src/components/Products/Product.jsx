@@ -2,7 +2,7 @@ import { Box, Button, ButtonGroup, Card, CardBody, CardFooter, Divider, Heading,
 import React from 'react'
 import { MdAddShoppingCart } from 'react-icons/md'
 
-const Product = ({product}) => {
+const Product = ({product,onAddToCart}) => {
   return (
     <Card maxW='sm'>
   <CardBody>
@@ -28,7 +28,7 @@ const Product = ({product}) => {
   <Divider />
   <CardFooter>
     <ButtonGroup spacing='2'>
-      <Button variant='solid' colorScheme='blue'>
+      <Button onClick={()=>onAddToCart(product)} variant='solid' colorScheme='blue'>
         <MdAddShoppingCart fontSize={"30px"} />
       </Button>
     </ButtonGroup>
