@@ -7,7 +7,6 @@ import { useStore } from './store/store';
 
 function App() {
   let store = useStore();
-console.log(store);
   return (
     <div className="App">
       <div className='userWrapper_Flex'>

@@ -3,7 +3,6 @@ import { ADD, DISABLE } from "./actionTypes";
 export let initialState = [];
 let reducer = (state=initialState,action)=>{
     let {type,payload} = action;
-    console.log(payload)
     switch (type) {
         case ADD:
             return [...state,payload]
