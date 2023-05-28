@@ -1,0 +1,11 @@
+.form{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 12px 6px;
+    background-color: lightblue;
+}
+input,button{
+    padding: 4px ;
+}
