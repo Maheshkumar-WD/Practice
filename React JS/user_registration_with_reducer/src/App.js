@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="App">
       <div className='userWrapper_Flex'>
-      <UserForm  dispatcher={store.dispatchFun.userDispatch} />
+      <UserForm  users={store.state.users} dispatcher={store.dispatchFun.userDispatch} />
       <Users users={store.state.users} dispatcher={store.dispatchFun.userDispatch} />
       </div>
     </div>
