@@ -11,3 +11,4 @@ This app is done to understand how useReducer works.
 
 1. data is not stored in any DB or localstorage
 2. if we refresh the page data will be removed or erased
+## live link: https://user-registration-with-reducer.vercel.app/
