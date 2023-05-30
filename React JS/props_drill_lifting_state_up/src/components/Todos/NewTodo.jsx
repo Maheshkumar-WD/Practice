@@ -1,9 +1,10 @@
-import React, {useState} from 'react'
+import React from 'react'
+
 import {v4 as uniqueId} from "uuid";
 import classes from "./NewTodo.module.css"
 let initialState = {title:"",date:"",priority:""}
 const NewTodo = ({onSubmit,onClose}) => {
-    let [formData,setFormData] = useState(initialState)
+    let [formData,setFormData] = React.useState(initialState)
    let handleSubmit = (e)=>{
        e.preventDefault();
        formData.id = uniqueId()

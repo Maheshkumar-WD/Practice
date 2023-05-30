@@ -9,6 +9,7 @@ function App() {
   let [todos,setTodos] = useState([]);
 
   let onSubmit=(todo)=>{
+    // setTodos([...todos,todo])
     setTodos(todosState=>{
       return [...todosState,todo];
     })

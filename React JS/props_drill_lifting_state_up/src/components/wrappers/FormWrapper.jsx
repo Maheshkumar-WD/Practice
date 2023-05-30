@@ -7,10 +7,12 @@ const FormWrapper = ({currLength,onSubmit}) => {
     let handleShowForm = ()=>{
         setShowForm(state=>!state)
     }
+    // !false === true
+    // !true === false
   return (
     <div className={classes.formWrapper}>
-        {!showForm && <button className={`${classes.add} ${formClasses.btn}`} onClick={handleShowForm}>Add New Todo</button>}
-       {showForm && <NewTodo onSubmit={onSubmit} currLength={currLength} onClose={handleShowForm} />}
+      if false {!showForm && <button className={`${classes.add} ${formClasses.btn}`} onClick={handleShowForm}>Add New Todo</button>}
+      if true {showForm && <NewTodo onSubmit={onSubmit} currLength={currLength} onClose={handleShowForm} />}
     </div>
   )
 }
