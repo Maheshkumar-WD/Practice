@@ -1,6 +1,6 @@
 {
-  "products": [
-    { "id": 1, "name": "mobile phone", "price": 25000 },
-    { "id": 2, "name": "A/C", "price": 250000 }
+  "data": [
+    { "name": "Mahesh", "age": 24, "id": 1 },
+    { "name": "vijay", "age": 24, "id": 2 }
   ]
 }
