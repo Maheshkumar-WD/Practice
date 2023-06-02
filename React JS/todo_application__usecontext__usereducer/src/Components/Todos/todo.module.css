@@ -1,0 +1,9 @@
+.editTodoInput{
+    width: 100%;
+    height: 100%;
+    background-color: #feb6c4;
+}
+.td{
+    width: 50%;
+    text-align: center;
+}
