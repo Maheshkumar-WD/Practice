@@ -1,6 +1,1 @@
-{
-  "data": [
-    { "name": "Mahesh", "age": 24, "id": 1 },
-    { "name": "vijay", "age": 24, "id": 2 }
-  ]
-}
+{"data":[{"name":"Mahesh","age":24,"id":1},{"name":"vijay","age":24,"id":2},{"name":"shankar","age":22,"id":3},{"name":"shankar","age":22,"id":4},{"name":"jai","age":26,"id":5},{"name":"jaya sainath","age":26,"id":6},{"name":"jaya sainath","age":26,"id":7}]}
