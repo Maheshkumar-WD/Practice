@@ -1,12 +1,13 @@
-.formContainer{
-    width: 500px;
-    margin: auto;
+.formContainer {
+  width: 500px;
+  margin: auto;
 }
-.formContainer form{
-    display: flex;
-    justify-content: center;
-    margin-top: 12px;
+.formContainer form {
+  display: flex;
+  justify-content: center;
+  margin-top: 12px;
 }
-.formContainer form input,form button{
-    padding: 4px;
+.formContainer form input,
+form button {
+  padding: 4px;
 }

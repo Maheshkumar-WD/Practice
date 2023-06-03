@@ -4,7 +4,6 @@ export let initialState = {
   todos: [],
 };
 const TodoReducer = (prevState = initialState, { type, payload }) => {
-  console.log("reducer", payload);
   switch (type) {
     case ADD_TODO:
       return {

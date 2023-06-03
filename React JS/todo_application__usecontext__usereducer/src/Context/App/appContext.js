@@ -16,7 +16,7 @@ const initContextState = {
   },
   actions: {
     add(payload) {},
-    edit(id,data) {},
+    edit(id, data) {},
     delete(id) {},
     currEdit(id) {},
   },
@@ -26,7 +26,7 @@ export const AppContext = createContext(initContextState);
 const AppContextProvider = ({ children }) => {
   const [todos, todoDispatch] = useReducer(TodoReducer, initialState);
   const [ui, uiDispatch] = useReducer(uiReducer, uiReducerInitialState);
-  console.log(todos);
+
   let value = {
     data: {
       ui: {
@@ -43,9 +43,8 @@ const AppContextProvider = ({ children }) => {
         todoDispatch(add(todo));
       },
       edit(id, data) {
-        console.log("context",id,data)
         todoDispatch(edit({ id, data }));
-        uiDispatch(resetCurrEdit())
+        uiDispatch(resetCurrEdit());
       },
       delete(id) {
         todoDispatch(delete_todo(id));

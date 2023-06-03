@@ -4,7 +4,6 @@ import Todo from "./Todo";
 import classes from "./Todos.module.css"
 const Todos = () => {
   const store = useContext(AppContext);
-  console.log(store)
 
   return (
     <div>
