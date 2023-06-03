@@ -1,7 +1,7 @@
 import React, { useContext, useRef } from "react";
 import { AppContext } from "../../Context/App/appContext";
 import { v4 as id } from "uuid";
-
+import classes from "./TodoForm.module.css"
 const TodoForm = () => {
   let inputRef = useRef("");
   let contextStore = useContext(AppContext);
@@ -11,7 +11,7 @@ const TodoForm = () => {
     inputRef.current.value = "";
   };
   return (
-    <div>
+    <div className={classes.formContainer}>
       <form onSubmit={handleSubmit}>
         <input ref={inputRef} type="text" />
         <button type="submit">Add</button>

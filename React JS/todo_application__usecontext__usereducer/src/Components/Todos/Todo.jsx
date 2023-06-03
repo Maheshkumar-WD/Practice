@@ -13,7 +13,6 @@ const Todo = ({ todo }) => {
   let handleChange = (e) => {
     setText(e.target.value);
   };
-
   let handleDelete = () => {
     appCtx.actions.delete(todo.id);
   };
@@ -26,13 +25,18 @@ const Todo = ({ todo }) => {
             onChange={handleChange}
             type="text"
             defaultValue={todo.title}
+            autoFocus={true}
           />
         </td>
         <td>
-          <button className={classes.updateBtn} onClick={handleUpdate}>
+          <button
+            type="submit"
+            className={classes.updateBtn}
+            onClick={handleUpdate}
+          >
             Update
           </button>
-          <button className={classes.updateBtn} onClick={handleDelete}>
+          <button className={classes.deleteBtn} onClick={handleDelete}>
             Delete
           </button>
         </td>
@@ -44,7 +48,7 @@ const Todo = ({ todo }) => {
           <button className={classes.editBtn} onClick={handleEdit}>
             Edit
           </button>
-          <button className={classes.updateBtn} onClick={handleDelete}>
+          <button className={classes.deleteBtn} onClick={handleDelete}>
             Delete
           </button>
         </td>

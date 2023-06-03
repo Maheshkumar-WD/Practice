@@ -1,5 +1,17 @@
 .todosTable {
   width: 500px;
-  border: 1px solid black;
   border-collapse: collapse;
+  margin: auto;
+  margin-top: 24px;
+}
+.todosTable td,
+th {
+  border: 1px solid black;
+}
+th:first-child,
+td:first-child {
+  width: 60%;
+}
+td:last-child {
+  text-align: center;
 }
