@@ -1,0 +1,39 @@
+form {
+  width: 400px;
+  margin: auto;
+  background-color: white;
+  padding: 24px 34px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px 0px #00000040;
+  margin-top: 54px;
+}
+.form-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.form-actions {
+  margin-top: 18px;
+  width: 100%;
+  display: flex;
+}
+input {
+  padding: 6px 4px;
+}
+.form-actions .loginBtn {
+  width: 100%;
+  padding: 4px 6px;
+  cursor: pointer;
+  background-color: var(--text-light);
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  border: 0;
+  border-radius: 5px;
+}
+.loginBtn:hover{
+    background-color: var(--background-text);
+}
+.formTitle {
+  color: var(--background-text);
+}

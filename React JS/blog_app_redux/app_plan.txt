@@ -1,0 +1,47 @@
+1. add login functionality and sign up functionality
+2. after sign up success, login user instantly
+3. user able to see all the posted blogs
+4. allow user to edit their blogs
+5. able to like posts and add as favorite.
+6. use firebase to store data
+
+
+routes
+home =====> / redirect to blogs page after login
+login =====> /login
+signup =====> /signup
+blogspage ====> /blogs  ====> public
+single blog ====> /blogs/id =====> private
+edit blog ====> /blogs/id/edit ====> private
+profile page ===> /user/userid/ ====> private
+user should able to open another user profile ====> private
+while seeing user profile able to access all public posts
+    if user is following able to see all posts
+
+users data {
+	name:"",
+	age:,
+	email:"",
+	Password:"",
+    afterSaved :
+	followers:[];
+	likedPosts:[];
+    dislikedPosts:[]
+}
+blogData should show in form {
+	blogTitle:""
+	description:""
+	postedDate:""
+	image:""
+	extraProperties: after post saved
+	likedCount: 
+	feedBacks
+}
+reports: {
+	selectedOption:
+    message:
+    reportId:
+    postId:
+}
+
+db URL: https://blog-application-imp-default-rtdb.asia-southeast1.firebasedatabase.app/
