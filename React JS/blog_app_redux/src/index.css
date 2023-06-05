@@ -4,7 +4,7 @@
 :root {
   --background-color: #ffe9e6;
   --background-text: #ff381a;
-  --text-dark: #e61f00;
+  --text-dark: #e61f00d5;
   --text-light: #ff7a66;
   --body-background:#ffd3cc;
 }
@@ -17,4 +17,20 @@
 body {
   background-color: #e6f2f2;
   /* background-color: var(--body-background); */
+}
+::-webkit-scrollbar{
+  width: 5px;
+  background-color: var(--body-background);
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: var(--background-text);
+  border-radius: 50px;
+}
+input[type='file']{
+  display:none
+}
+::-webkit-file-upload-button{
+  background-color: var(--background-text);
+  display: none;
 }

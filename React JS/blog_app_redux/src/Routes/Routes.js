@@ -2,6 +2,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import AppLayout from "../Pages/HomePage";
 import LoginPage from "../Pages/LoginPage";
 import BlogPage from "../Pages/BlogPage";
+import SignupForm from "../Components/LoginSignUp/SignupForm";
 
 const RootRoutes = createBrowserRouter([
   {
@@ -16,8 +17,16 @@ const RootRoutes = createBrowserRouter([
             path: ":id",
             element: <h1>Single Blog Page</h1>,
             children: [{ path: "edit", element: <h1>blog edit page</h1> }],
+            loader: () => {
+              // fetch single blog Data and dispatch an action
+              return true;
+            },
           },
         ],
+        loader: () => {
+          // fetch blogs data and dispatch an action
+          return true;
+        },
       },
       {
         path: "/login",
@@ -25,7 +34,7 @@ const RootRoutes = createBrowserRouter([
       },
       {
         path: "/signup",
-        element: <h1>signup Page</h1>,
+        element: <SignupForm />,
       },
       { path: "/user/:userId", element: <h1>User Page</h1> },
     ],

@@ -4,10 +4,15 @@ header{
     background-color: var(--background-color);
     box-shadow: 0 2px 5px 1px  rgba(0, 0, 0, 0.221);
 }
+.mainNavHeader{
+    position: sticky;
+    top: 0px;
+}
 .logo{
     color: var(--background-text);
     font-family: 'Pacifico', cursive;
     font-size: 34px;
+    text-shadow: 2px 2px rgb(105, 93, 93);
 }
 
 .mainNav{
@@ -37,4 +42,13 @@ header{
 .mainNav ul li a:hover{
     color:black;
     text-decoration: underline;
+}
+.navSignupBtn{
+    padding: 4px 6px;
+    font-size: 16px;
+    background-color: var(--background-text);
+    color: var(--background-color);
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
 }

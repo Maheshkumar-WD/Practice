@@ -1,12 +1,16 @@
 import React from "react";
 import classes from "./Navbar.module.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import Button from "../UI/Button/Button";
+
 const Navbar = () => {
+  let navigate = useNavigate();
   let navLinkActive = ({ isActive }) => {
     return isActive ? classes.active : undefined;
   };
+
   return (
-    <header>
+    <header className={classes.mainNavHeader}>
       <nav className={classes.mainNav}>
         <h1 className={classes.logo}>Blog App</h1>
         <ul>
@@ -29,6 +33,10 @@ const Navbar = () => {
             <NavLink className={navLinkActive} to={"/login"}>
               login
             </NavLink>
+          </li>
+          <li>
+            <Button onClick={() => navigate("/signup")}>Sign Up</Button>
+            
           </li>
         </ul>
       </nav>
